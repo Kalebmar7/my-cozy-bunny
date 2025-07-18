@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Cozy Bunny 🐰</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="room">
+    <h1>🐇 My Cozy Bunny</h1>
+
+    <div class="bunny-container">
+      <img id="bunny" src="images/bunny_happy.gif" alt="My Cozy Bunny" />
+      <p id="mood">Mood: 💖 Happy</p>
+      <div class="happiness-bar">
+        <div id="happinessFill"></div>
+      </div>
+      <p id="coinCount">Coins: 0</p>
+
+      <p id="missionText" class="mission-text"></p>
+      <p id="missionProgress" class="mission-progress"></p>
+    </div>
+
+    <div class="actions">
+      <button id="feedBtn">🍓 Feed</button>
+      <button id="cuddleBtn">🤗 Cuddle</button>
+      <button id="brushBtn">🧼 Brush</button>
+    </div>
+
+    <div class="bg-shop">
+      <h2>🖼️ Background Themes</h2>
+      <button id="bg-cherry-btn">🌸 Cherry Blossom (25 monedas)</button>
+      <button id="bg-cottage-btn">🧺 Bunny Cottage (50 monedas)</button>
+      <button id="bg-cafe-btn">🍰 Cozy Café (100 monedas)</button>
+    </div>
+
+    <div id="popup" class="hidden"></div>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+  <source src="sounds/background-music.mp3" type="audio/mpeg" />
+</audio>
+
+  <audio id="snackSound" src="sounds/snack.mp3" preload="auto"></audio>
+  <audio id="happySound" src="sounds/happy.mp3" preload="auto"></audio>
+  <audio id="sadSound" src="sounds/sad.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

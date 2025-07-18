@@ -1,0 +1,129 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ffeef2;
+}
+
+html, body {
+  height: 100%;
+}
+
+  .room {
+  background: linear-gradient(to top, #fceff9, #e0f7fa); /* pastel original */
+  transition: background 0.5s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.bg-cherry {
+  background-image: url('images/bg_cherry.png');
+}
+
+.bg-cottage {
+  background-image: url('images/bg_cottage.png');
+}
+
+.bg-cafe {
+  background-image: url('images/bg_cafe.png');
+}
+
+h1 {
+  color: #ff70a6;
+}
+
+.bunny-container {
+  margin: 20px auto;
+}
+
+#bunny {
+  width: 180px;
+  transition: transform 0.3s;
+}
+
+#bunny.bounce {
+  transform: scale(1.1);
+}
+
+#mood {
+  font-size: 18px;
+  color: #ff1493;
+  margin-bottom: 10px;
+}
+
+.happiness-bar {
+  width: 200px;
+  height: 20px;
+  margin: 10px auto;
+  background-color: #fff0f5;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #ff70a6;
+}
+
+#happinessFill {
+  height: 100%;
+  background: linear-gradient(to right, #ff85c1, #ffaec9);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.actions button, .bg-shop button {
+  background-color: #ffb6b9;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffc0cb;
+  transition: transform 0.2s;
+}
+
+.actions button:hover, .bg-shop button:hover {
+  transform: scale(1.05);
+}
+
+#coinCount {
+  color: #ff1493;
+  font-weight: bold;
+}
+
+#popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff0f5;
+  border: 2px solid #ff70a6;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 14px;
+  box-shadow: 0 0 10px #ffd1dc;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#popup.show {
+  opacity: 1;
+}
+
+/* Misión estilos */
+.mission-text {
+  font-weight: bold;
+  color: #ff1493;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.mission-progress {
+  color: #ff70a6;
+  font-weight: 600;
+  margin-top: 4px;
+  font-size: 16px;
+}
