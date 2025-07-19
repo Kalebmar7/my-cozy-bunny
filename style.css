@@ -107,11 +107,19 @@ h1 {
   box-shadow: 0 0 10px #ffd1dc;
   opacity: 0;
   transition: opacity 0.5s ease;
+  pointer-events: none; /* evita clicks cuando está oculto */
 }
 
 #popup.show {
   opacity: 1;
+  pointer-events: auto; /* habilita clicks cuando está visible */
 }
+
+.hidden {
+  display: none;
+}
+
+
 
 /* Misión estilos */
 .mission-text {
@@ -127,3 +135,5 @@ h1 {
   margin-top: 4px;
   font-size: 16px;
 }
+
+
